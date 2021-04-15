@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Book Life</title>
+
+    <meta name="description" content="store for books">
+
+    <meta name="author" content="Priyanka Arpit">
+
+    <!--for responsive website that adapts to screen size-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" href="logo_booklife.jpg" type="image/jpg">
+
+    <link rel="stylesheet" href="project_css_file.css">
+
+
+    <style>
+        fieldset {
+            border-radius: 10px;
+            background-color: lavender;
+            color: black;
+            border: solid black 2px;
+
+        }
+
+        legend {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            border-radius: 6px;
+            height: 30px;
+            margin: 10px;
+            background-color: lavender;
+        }
+
+        textarea {
+            border-radius: 8px;
+            margin: 10px;
+            background-color: lavender;
+        }
+
+        select {
+            border-radius: 6px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        label,
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            margin-left: 250px;
+            width: 120px;
+            height: 30px;
+            font-weight: bold;
+            background-color: rgb(92, 146, 247);
+        }
+
+        .form-div {
+            float: left;
+            margin-top: 30px;
+            height: 330px;
+        }
+
+        .form-div-div {
+            margin-left: 350px;
+            margin-top: 30px;
+        }
+
+        .form-title {
+            font-size: 40px;
+            margin-left: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            width: 700px;
+            margin-left: 0px;
+            height: 550px;
+            margin-top: 20px;
+
+        }
+
+        .main-div {
+            float: right;
+            margin-top: 0px;
+            z-index: -1;
+            margin-right: 100px;
+
+        }
+
+        iframe {
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+            left: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <img id="logo" src="logo_booklife.jpg" alt="Logo of the website" title="Logo" height="150" width="150">
+        <h1>BOOK LIFE</h1>
+    </header>
+    <hr>
+
+    <!-- Nav -->
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Catalogue.html">Catalogue</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Compare.html">Compare</a>
+    </nav>
+    <hr>
+
+    <!--Main-->
+
+    <main>
+        <div class="main-div">
+            <h1 class="form-title">Contact Us</h1>
+            <form action=" reply_page.html" method="POST" style="">
+                <fieldset>
+                    <div class="form-div">
+                        <label for="firstname">First Name*</label><br>
+                        <input type="text" id="firstname" class="form-contact-first-name" name="firstname" required
+                            maxlength="50"><br>
+                        <label for="lastname">Last Name*</label><br>
+                        <input type="text" id="lastname" name="lastname" required maxlength="50"><br>
+                        <label for="address">Street Address, Apt No.*</label><br>
+                        <textarea name="address" id="address" cols="30" rows="10" maxlength="255"
+                            placeholder="Enter your address" required></textarea><br>
+                        <input type="checkbox" name="spam_ok" value="1" id="accept" checked required>
+                        <label for="accept">I agree to receive info about new product</label><br>
+                        <input type="checkbox" name="agree" value="1" id="comply" required>
+                        <label for="comply">I accept to comply with the company rules</label><br>
+                    </div>
+                    <div class="form-div-div">
+                        <label for="city">City*</label><br>
+                        <input type="text" placeholder="" name="city" id="city" required maxlength="50"><br>
+                        <label for="state">Province/State*</label><br>
+                        <input type="text" placeholder="" name="state" id="state" required maxlength="20"><br>
+                        <label for="country">Country*</label><br>
+                        <select name="country" id="country">
+                            <option value="" selected>Select One</option>
+                            <option value="1">Canada</option>
+                            <option value="2">USA</option>
+                        </select><br>
+                        <label for="postalcode">Postal Code/Zip Code*</label><br>
+                        <input type="text" name="postalcode" id="postalcode" placeholder="ex H3W 0A9" required
+                            maxlength="7"><br>
+                        <label>Prefered Language* </label><br>
+                        <input type="radio" name="language" value="en" id="english" checked>
+                        <label for="english">English</label><br>
+                        <input type="radio" name="language" value="fr" id="french">
+                        <label for="french">French</label><br>
+                        <input type="radio" name="language" value="other" id="other">
+                        <label for="other">Other</label>
+                        <input type="text" name="other_lang" maxlength="20"><br></div>
+                    <button name="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <br><br><br><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.888062028668!2d-73.58104858504869!3d45.49219883959683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6c1c7178f1%3A0x80556a871a391cb7!2s1225%20Rue%20Saint-Marc%2C%20Montr%C3%A9al%2C%20QC%20H3H%202E7!5e0!3m2!1sen!2sca!4v1596401868645!5m2!1sen!2sca"
+                width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <br><br><br><br><br><br><br>
+        </div>
+    </main>
+
+    <hr>
+
+    <!--Footer-->
+    <footer>
+
+        <!--logo and address-->
+        <div class="logoaddress">
+            <img src="logo_booklife.jpg" alt="Logo of the website" title="Logo" height="100" width="100">
+
+            <address>1225, Rue saint marc,<br> H3H 2E7, Monreal,<br> QC, Canada</address>
+
+            <a href="mailto:booklife@gmail.com" class="mailcall"><img src="mail.png" alt="mail" title="mail"
+                    style="height: 40px; width:40px;">booklife@gmail.com</a><br>
+
+            <a href=" +14387226071" class="mailcall"><img src="phone.png" alt="phone" title="phone"
+                    style="height: 40px; width:40px;">(438) 722 6071</a>
+        </div>
+        <br>
+
+        <!-- copyright -->
+        <div class="copyright">
+            <table style="font-size: 110%;">
+                <tr>
+                    <th>PRODUCTS</th>
+                    <th>HELP</th>
+                    <th>MY ACCOUNT</th>
+                </tr>
+                <tr>
+                    <td>New Arrivals</td>
+                    <td>About Us</td>
+                    <td>Login</td>
+                </tr>
+                <tr>
+                    <td>Bestsellers</td>
+                    <td>Help Center</td>
+                    <td>Past Orders</td>
+                </tr>
+                <tr>
+                    <td>Browse</td>
+                    <td>Book Outlet Rewards</td>
+                    <td>Edit Profile</td>
+                </tr>
+                <tr>
+                    <td>Sale</td>
+                    <td>Loyalty FAQs</td>
+                    <td>Wishlist</td>
+                </tr>
+                <tr>
+                    <td>Gift Cards</td>
+                    <td>Contact Us</td>
+                    <td>Create New Account</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Shipping</td>
+                    <td>My Rewards</td>
+                </tr>
+                <tr>
+                    <th>STUDENT DISCOUNT</th>
+                    <td>Ordering</td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th>BLOG</th>
+                    <td></td>
+                    <th>COMMUNITY</th>
+                </tr>
+            </table>
+            <p>Copyright &copy; 2020 booklife.com</p>
+        </div>
+
+        <!--social media-->
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook" title="facebook"
+                    style="height: 50px; width:50px;"></a>
+
+            <a href="https://www.instagram.com/?hl=en"><img src="instagram.png" alt="instagram" title="instagram"
+                    style="height: 50px; width:50px;"></a>
+
+            <a href="https://twitter.com/?lang=en"><img src="twitter.png" alt="twitter" title="twitter"
+                    style="height: 50px; width:50px;"></a>
+
+            <a href="https://www.pinterest.ca/"><img src="pinterest.png" alt="pinterest" title="pinterest"
+                    style="height: 50px; width:50px;"></a>
+
+            <h2>STAY CONNECTED!</h2>
+            <p class="subscribe">Subscribe to our newsletter<br>for promotions & more.</p>
+            <h2>SUBSCRIBE NOW</h2>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

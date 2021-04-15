@@ -1,0 +1,100 @@
+* {
+    box-sizing: border border-box;
+    background-color: lavender;
+}
+
+html {
+    margin: auto;
+}
+
+/* header css */
+
+header {
+    position: relative;
+    padding: 20px;
+    font-size: 200%;
+}
+
+header h1 {
+    margin-left: 150px;
+}
+
+header img {
+    position: absolute;
+    left: 0px;
+}
+
+/* nav css */
+
+nav {
+    display: inline-flex;
+}
+
+nav a {
+    padding: 13px 70px;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(157, 180, 243);
+    color: black;
+}
+
+/* footer css */
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+.logoaddress {
+    float: left;
+    font-size: 150%;
+    padding: 0%;
+}
+
+.socialmedia {
+    float: right;
+}
+
+.subscribe {
+    font-size: 100%;
+}
+
+.copyright {
+    align-items: center;
+    float: left;
+    margin-left: 15%;
+    text-decoration: none;
+}
+
+.mailcall {
+    font-size: 90%;
+}
+
+/* main */
+
+.homepageimg, .cataloguepageimg, .gallerypageimg {
+    width: 100%;
+}
+
+.homepageimg img:hover {
+    display: block;
+}
+
+.cataloguepageimg tr td img:hover {
+    display: block;
+}
+
+.gallerypageimg img:hover {
+    display: block;
+}
+
+.homepageimg, .cataloguepageimg {
+    font-size: 120%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
